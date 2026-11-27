@@ -45,6 +45,10 @@
   @keyframes pl{50%{opacity:.7;letter-spacing:.18em}}
   #hud{position:fixed;inset:0;pointer-events:none}
   #mode{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-size:18px;letter-spacing:.35em;padding:6px 18px;border:1px solid #fff3;background:#000a}
+  #mode .ms{font-size:1em}
+  #mode .mh{display:inline-block;max-width:0;overflow:hidden;white-space:nowrap;vertical-align:bottom;opacity:0;margin-left:0;font-size:.62em;letter-spacing:.2em;transition:max-width .25s,opacity .25s,margin-left .25s}
+  #mode[data-say="1"] .mh{max-width:16em;opacity:1;margin-left:.9em}
+  #mode{letter-spacing:.2em;padding:6px 14px}
   #mode.plan{color:#7fd7ff;border-color:#7fd7ff88}
   #mode.live{color:#ff5a4f;border-color:#ff5a4f88}
   #target{position:absolute;top:58px;left:50%;transform:translateX(-50%);font-size:13px;color:#ffd27f;text-shadow:0 0 6px #000}
@@ -58,7 +62,7 @@
   #target .tfl{font:italic 11px Georgia,'Times New Roman',serif;color:#e8d8b0;opacity:.7;margin-top:3px;text-align:center;letter-spacing:.02em}
   #hud-root .slot.cond{border-color:#9be37f;box-shadow:0 0 10px #9be37f88,0 0 0 1px #9be37f inset}
 </style>
-  <script type="module" crossorigin src="./assets/index-DG_JGYaU.js"></script>
+  <script type="module" crossorigin src="./assets/index-DPene5R5.js"></script>
 </head>
 <body>
 <div id="preload"><b>STICKFALL</b><div class="bar"><i></i></div><div class="st">opening the book</div></div>
