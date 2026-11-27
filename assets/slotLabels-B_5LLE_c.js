@@ -1,0 +1,1 @@
+const l=()=>null;let s=l;const a=t=>s(t),e=()=>s!==l;function c(t){s=t,o()}let n=()=>null;const i=t=>{n=t},f=t=>n(t),o=()=>{typeof dispatchEvent=="function"&&dispatchEvent(new Event("stickfall:loadout"))};export{f as a,o as b,i as c,c as d,e as h,a as s};
