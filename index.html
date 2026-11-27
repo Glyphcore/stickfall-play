@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kaushan+Script&display=swap" onload="this.rel='stylesheet'" />
 <style>
+  /* screen insets (notch / status bar / home indicator / browser chrome over the page): env() until ui/viewportInsets.ts takes over and also folds in the visual-viewport offset */
+  :root{--sat:env(safe-area-inset-top,0px);--sar:env(safe-area-inset-right,0px);--sab:env(safe-area-inset-bottom,0px);--sal:env(safe-area-inset-left,0px)}
   html,body{margin:0;height:100%;background:#05040a;overflow:hidden;font-family:ui-monospace,Consolas,monospace;color:#d8d2e8}
   canvas{display:block}
   /* scrollbars: thin ink track, ink-stroke thumb, red on hover (all scrollable areas) */
@@ -44,16 +46,16 @@
   #preload .st{font:11px system-ui;letter-spacing:.3em;text-transform:uppercase;opacity:.5;color:#d8d2c4}
   @keyframes pl{50%{opacity:.7;letter-spacing:.18em}}
   #hud{position:fixed;inset:0;pointer-events:none}
-  #mode{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-size:18px;letter-spacing:.35em;padding:6px 18px;border:1px solid #fff3;background:#000a}
+  #mode{position:absolute;top:calc(14px + var(--sat,0px));left:50%;transform:translateX(-50%);font-size:18px;letter-spacing:.35em;padding:6px 18px;border:1px solid #fff3;background:#000a}
   #mode .ms{font-size:1em}
   #mode .mh{display:inline-block;max-width:0;overflow:hidden;white-space:nowrap;vertical-align:bottom;opacity:0;margin-left:0;font-size:.62em;letter-spacing:.2em;transition:max-width .25s,opacity .25s,margin-left .25s}
   #mode[data-say="1"] .mh{max-width:16em;opacity:1;margin-left:.9em}
   #mode{letter-spacing:.2em;padding:6px 14px}
   #mode.plan{color:#7fd7ff;border-color:#7fd7ff88}
   #mode.live{color:#ff5a4f;border-color:#ff5a4f88}
-  #target{position:absolute;top:58px;left:50%;transform:translateX(-50%);font-size:13px;color:#ffd27f;text-shadow:0 0 6px #000}
-  #info{position:absolute;left:14px;bottom:74px;font-size:12px;line-height:1.6;background:#000a;padding:10px 12px;border-left:2px solid #ff5a4f}
-  #queue{position:absolute;right:14px;bottom:14px;font-size:12px;line-height:1.6;background:#000a;padding:10px 12px;min-width:190px;border-right:2px solid #7fd7ff}
+  #target{position:absolute;top:calc(58px + var(--sat,0px));left:50%;transform:translateX(-50%);font-size:13px;color:#ffd27f;text-shadow:0 0 6px #000}
+  #info{position:absolute;left:max(14px,var(--sal,0px));bottom:calc(74px + var(--sab,0px));font-size:12px;line-height:1.6;background:#000a;padding:10px 12px;border-left:2px solid #ff5a4f}
+  #queue{position:absolute;right:max(14px,var(--sar,0px));bottom:max(14px,var(--sab,0px));font-size:12px;line-height:1.6;background:#000a;padding:10px 12px;min-width:190px;border-right:2px solid #7fd7ff}
   .bar{position:absolute;left:0;right:0;height:0;background:#000;transition:height .08s}
   #barTop{top:0} #barBot{bottom:0}
   body.cut .bar{height:11vh}
@@ -62,7 +64,7 @@
   #target .tfl{font:italic 11px Georgia,'Times New Roman',serif;color:#e8d8b0;opacity:.7;margin-top:3px;text-align:center;letter-spacing:.02em}
   #hud-root .slot.cond{border-color:#9be37f;box-shadow:0 0 10px #9be37f88,0 0 0 1px #9be37f inset}
 </style>
-  <script type="module" crossorigin src="./assets/index-H-3L85ca.js"></script>
+  <script type="module" crossorigin src="./assets/index-DbgIQl0z.js"></script>
 </head>
 <body>
 <div id="preload"><b>STICKFALL</b><div class="bar"><i></i></div><div class="st">opening the book</div></div>
