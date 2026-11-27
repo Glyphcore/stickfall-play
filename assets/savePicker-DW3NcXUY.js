@@ -1,4 +1,4 @@
-import{n as R,p as M}from"./saves-6lzZoXay.js";import{d as P,s as S}from"./bakeCache-CwYf_Dbl.js";import"./gameKeys-6jZD_1-c.js";const T=`
+import{n as R,p as M}from"./saves-6lzZoXay.js";import{d as P,s as S}from"./bakeCache-Dsp6W6bj.js";import"./gameKeys-6jZD_1-c.js";const T=`
 #fe .saves{display:none;position:absolute;inset:0;align-items:center;justify-content:center;pointer-events:auto;background:#050507d0;font-family:system-ui;color:#e8e2d6}
 html[data-panel=saves] #fe .saves{display:flex}
 html[data-panel=saves] #fe .menu,html[data-panel=saves] #fe .cap,html[data-panel=saves] #fe .keys{display:none}
