@@ -1,4 +1,4 @@
-import{D as $t,m as Hi,h as Wl,B as ks,b as Xl,M as ql}from"./theatre.worker-qppNDilW.js";/**
+import{D as $t,m as Hi,h as Wl,B as ks,b as Xl,M as ql}from"./theatre.worker-KjVLsA_v.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
@@ -4009,10 +4009,11 @@ void main() {
 
 			#endif
 
-		}`};class am extends Kn{constructor(){super();const t=rm;this.uniforms=Mi.clone(t.uniforms),this.material=new Yp({name:t.name,uniforms:this.uniforms,vertexShader:t.vertexShader,fragmentShader:t.fragmentShader}),this.fsQuad=new Ta(this.material),this._outputColorSpace=null,this._toneMapping=null}render(t,e,n){this.uniforms.tDiffuse.value=n.texture,this.uniforms.toneMappingExposure.value=t.toneMappingExposure,(this._outputColorSpace!==t.outputColorSpace||this._toneMapping!==t.toneMapping)&&(this._outputColorSpace=t.outputColorSpace,this._toneMapping=t.toneMapping,this.material.defines={},Ht.getTransfer(this._outputColorSpace)===Kt&&(this.material.defines.SRGB_TRANSFER=""),this._toneMapping===$o?this.material.defines.LINEAR_TONE_MAPPING="":this._toneMapping===Zo?this.material.defines.REINHARD_TONE_MAPPING="":this._toneMapping===jo?this.material.defines.CINEON_TONE_MAPPING="":this._toneMapping===Jo?this.material.defines.ACES_FILMIC_TONE_MAPPING="":this._toneMapping===Qo?this.material.defines.AGX_TONE_MAPPING="":this._toneMapping===tl&&(this.material.defines.NEUTRAL_TONE_MAPPING=""),this.material.needsUpdate=!0),this.renderToScreen===!0?(t.setRenderTarget(null),this.fsQuad.render(t)):(t.setRenderTarget(e),this.clear&&t.clear(t.autoClearColor,t.autoClearDepth,t.autoClearStencil),this.fsQuad.render(t))}dispose(){this.material.dispose(),this.fsQuad.dispose()}}class om extends Kn{constructor(t){super(),this.u=t,this.needsSwap=!1}render(t,e,n){this.u.tSkD.value=n.depthTexture}}const lm={uniforms:{tDiffuse:{value:null},uTime:{value:0},uPlan:{value:0},uFlash:{value:0},uCut:{value:0},uAspect:{value:1},uRobo:{value:0},uComic:{value:0},uSketch:{value:0},uExpo:{value:1},uASat:{value:1},uVigK:{value:1},uGrainK:{value:1},uChromaK:{value:0},uUnrest:{value:0},uACol:{value:new Tt("#000000")},uEtch:{value:0},uSat:{value:1},uTint:{value:new Tt("#ffffff")},uTintAmt:{value:0},uTexel:{value:new Ft(1/1280,1/720)},uEtchInk:{value:new Tt("#f3e6c8")},tSkD:{value:null},uNear:{value:.1},uFar:{value:200}},vertexShader:"varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",fragmentShader:`
+		}`};class am extends Kn{constructor(){super();const t=rm;this.uniforms=Mi.clone(t.uniforms),this.material=new Yp({name:t.name,uniforms:this.uniforms,vertexShader:t.vertexShader,fragmentShader:t.fragmentShader}),this.fsQuad=new Ta(this.material),this._outputColorSpace=null,this._toneMapping=null}render(t,e,n){this.uniforms.tDiffuse.value=n.texture,this.uniforms.toneMappingExposure.value=t.toneMappingExposure,(this._outputColorSpace!==t.outputColorSpace||this._toneMapping!==t.toneMapping)&&(this._outputColorSpace=t.outputColorSpace,this._toneMapping=t.toneMapping,this.material.defines={},Ht.getTransfer(this._outputColorSpace)===Kt&&(this.material.defines.SRGB_TRANSFER=""),this._toneMapping===$o?this.material.defines.LINEAR_TONE_MAPPING="":this._toneMapping===Zo?this.material.defines.REINHARD_TONE_MAPPING="":this._toneMapping===jo?this.material.defines.CINEON_TONE_MAPPING="":this._toneMapping===Jo?this.material.defines.ACES_FILMIC_TONE_MAPPING="":this._toneMapping===Qo?this.material.defines.AGX_TONE_MAPPING="":this._toneMapping===tl&&(this.material.defines.NEUTRAL_TONE_MAPPING=""),this.material.needsUpdate=!0),this.renderToScreen===!0?(t.setRenderTarget(null),this.fsQuad.render(t)):(t.setRenderTarget(e),this.clear&&t.clear(t.autoClearColor,t.autoClearDepth,t.autoClearStencil),this.fsQuad.render(t))}dispose(){this.material.dispose(),this.fsQuad.dispose()}}class om extends Kn{constructor(t){super(),this.u=t,this.needsSwap=!1}render(t,e,n){this.u.tSkD.value=n.depthTexture}}const lm={defines:{},uniforms:{tDiffuse:{value:null},uTime:{value:0},uPlan:{value:0},uFlash:{value:0},uCut:{value:0},uAspect:{value:1},uRobo:{value:0},uComic:{value:0},uSketch:{value:0},uExpo:{value:1},uASat:{value:1},uVigK:{value:1},uGrainK:{value:1},uChromaK:{value:0},uUnrest:{value:0},uACol:{value:new Tt("#000000")},uEtch:{value:0},uSat:{value:1},uTint:{value:new Tt("#ffffff")},uTintAmt:{value:0},uTexel:{value:new Ft(1/1280,1/720)},uEtchInk:{value:new Tt("#f3e6c8")},tSkD:{value:null},uNear:{value:.1},uFar:{value:200}},vertexShader:"varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",fragmentShader:`
     uniform sampler2D tDiffuse; uniform float uTime, uPlan, uFlash, uCut, uAspect, uEtch, uSat, uTintAmt, uRobo, uComic, uSketch, uExpo, uASat, uVigK, uGrainK, uChromaK, uUnrest; uniform vec3 uACol; uniform vec3 uTint, uEtchInk; uniform vec2 uTexel; uniform sampler2D tSkD; uniform float uNear, uFar; varying vec2 vUv;
     float lum(vec3 c){ return dot(c, vec3(0.299,0.587,0.114)); }
     float h(vec2 p){ return fract(sin(dot(p, vec2(12.9898,78.233))) * 43758.5453); }
+#ifdef SF_LOOK_SKETCH
     // ---- sketch helpers ----
     float vn(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
       return mix(mix(h(i), h(i+vec2(1.,0.)), f.x), mix(h(i+vec2(0.,1.)), h(i+vec2(1.,1.)), f.x), f.y); }
@@ -4035,6 +4036,7 @@ void main() {
       float wd = mix(0.10, 0.26, clamp(dk, 0.0, 1.0)) * (0.65 + 0.7 * vn(vec2(s * 3.0, k)));
       return (1.0 - smoothstep(wd - 0.07, wd + 0.07, abs(f - 0.5))) * amt * gap;
     }
+#endif
     void main(){
       vec2 c = vUv - 0.5;
       // line boil: the etched pass re-draws slightly differently ~8x/sec, like hand-inked frames
@@ -4054,6 +4056,7 @@ void main() {
       col = mix(vec3(L0), col, uSat);
       col = mix(col, uTint * (L0 * 1.6 + 0.02), uTintAmt);
       vec3 gcol = col;                                      // graded colour, before any look rewrites it
+#ifdef SF_LOOK_ETCH
       // etched monochrome: edges glow, midtones hatch, shadows cross-hatch
       if (uEtch > 0.001) {
         vec2 t = uTexel * 1.5;
@@ -4070,6 +4073,8 @@ void main() {
         vec3 etch = uEtchInk * (edge * 1.5 + hatch * 0.5 + hi * 1.3) + vec3(0.015, 0.012, 0.02);
         col = mix(col, etch, uEtch);
       }
+#endif
+#ifdef SF_LOOK_SKETCH
       // 2D hand-drawn adaptation (docs/decisions.md "Sketch pass"). Authored in display (sRGB) space, then
       // linearised, since OutputPass encodes after this shader. Layers, back to front:
       //   warm paper with fibre + tooth -> tonal wash (cool shadows) -> watercolour pigment that drifts off
@@ -4147,11 +4152,13 @@ void main() {
         sk = mix(sk, vec3(0.07, 0.05, 0.06), clamp(ink, 0.0, 1.0) * (0.9 + 0.1 * grn));
         col = mix(col, pow(sk, vec3(2.2)), uSketch);
       }
+#endif
       // speed lines (radial) during cuts
       float ang = atan(c.y, c.x * uAspect);
       // sparse, brief accent only on a real impact flash (NOT on every cut / scene): few thin streaks hugging the screen edge
       float lines = step(0.965, h(vec2(floor(ang * 70.0), floor(uTime * 14.0))));
       col = mix(col, vec3(1.0), lines * smoothstep(0.55, 0.95, length(c)) * smoothstep(0.35, 1.0, uFlash) * 0.22);
+#ifdef SF_LOOK_COMIC
       // comic panel: halftone dots by darkness + inked panel frame
       if (uComic > 0.001) {
         vec2 fc2 = gl_FragCoord.xy; float cell = 7.0;
@@ -4166,6 +4173,7 @@ void main() {
         comic = mix(comic, vec3(0.0), frame); comic = mix(comic, vec3(0.95), inner);
         col = mix(col, comic, uComic);
       }
+#endif
       // robotic scanner view
       if (uRobo > 0.001) {
         float Lr = lum(col);
